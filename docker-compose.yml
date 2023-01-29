@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  bookstore-webapi:
+    build:
+      context: .
+      dockerfile: BookStore.WebApi/Dockerfile
+    ports:
+      - "5080:80"
+    # environment:
+    #   - ASPNETCORE_ENVIRONMENT=Staging
+    depends_on:
+      - "mongo-database"
+  mongo-database:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
