@@ -6,8 +6,8 @@ services:
       dockerfile: BookStore.WebApi/Dockerfile
     ports:
       - "5080:80"
-    # environment:
-    #   - ASPNETCORE_ENVIRONMENT=Staging
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
     depends_on:
       - "mongo-database"
   mongo-database:
