@@ -1,5 +1,12 @@
 namespace BookStore.WebApi
 {
+    #region using
+
+    using BookStore.WebApi.Configurations;
+    using BookStore.WebApi.Services;
+
+    #endregion
+
     public class Program
     {
         public static void Main(string[] args)
@@ -7,6 +14,11 @@ namespace BookStore.WebApi
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services
+                .Configure<BookStoreDatabaseSettings>(
+            builder.Configuration.GetSection("BookStoreDatabase"));
+
+            builder.Services.AddSingleton<BooksService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
