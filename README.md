@@ -26,3 +26,6 @@ After running the last command open the URL:
 
 # Documentation
 - [Creación de una API Web con ASP.NET Core y MongoDB](https://learn.microsoft.com/es-es/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-7.0&tabs=visual-studio#create-the-aspnet-core-web-api-project)
+
+# Curiosities
+- [Github: apolzek/api-books-dotnet](https://github.com/apolzek/api-books-dotnet)
