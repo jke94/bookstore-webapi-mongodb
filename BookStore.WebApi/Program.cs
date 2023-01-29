@@ -33,10 +33,7 @@ namespace BookStore.WebApi
                 app.UseSwaggerUI();
             }
 
-            // Configure the HTTP request pipeline.
-
-            // TODO: Temporally.
-            // app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseAuthorization();
 
