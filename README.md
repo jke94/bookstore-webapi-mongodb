@@ -21,5 +21,8 @@ After running the last command open the URL:
 
 - http://localhost:5080/swagger/index.html
 
+![image](https://user-images.githubusercontent.com/53972851/215342264-888c2881-2848-442f-b10a-ae0d8fbf3af6.png)
+
+
 # Documentation
 - [Creación de una API Web con ASP.NET Core y MongoDB](https://learn.microsoft.com/es-es/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-7.0&tabs=visual-studio#create-the-aspnet-core-web-api-project)
